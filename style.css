@@ -1,0 +1,28 @@
+.my-style{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin:auto;
+    font-family: 'Odibee Sans', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #CAD5E2;
+    width: 1000px ;
+    height: 900px;
+    border: 2px solid black;
+   
+}
+
+.divbod{
+  
+    position: relative;
+    
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+   
+  
+    
+
+}
