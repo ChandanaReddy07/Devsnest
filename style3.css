@@ -1,0 +1,39 @@
+.column {
+    float: left;
+    width: 50%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.rom{
+    border-left:1px solid gray;
+    border-left-style:double;
+    height: 600px;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top:40px;
+    margin-top: 20px;
+    font-family: 'Sigmar One', cursive;
+    position:relative;
+    font-size: 14px;
+    
+   
+
+}
+span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.parent{
+    width:900px;
+    height: 700px;
+    border:3px solid gray;
+    margin-left: 15%;
+    background-color:rgb(252, 222, 236) ;
+    
+}

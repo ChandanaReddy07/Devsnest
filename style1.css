@@ -47,7 +47,8 @@ body{
     top:-330px;
     line-height: 45px;
     position : relative;
-    animation:hours_anim 6000s linear infinite;
+    transform-origin: bottom;
+    animation:hours_anim 600s linear infinite;
 }
 @keyframes sec_anim{
     from{transform:rotateZ(0deg);}
