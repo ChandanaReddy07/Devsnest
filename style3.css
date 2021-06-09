@@ -3,13 +3,7 @@
     width: 50%;
     
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+ 
 .rom{
     border-left:1px solid gray;
     border-left-style:double;
@@ -21,9 +15,7 @@
     font-family: 'Sigmar One', cursive;
     position:relative;
     font-size: 14px;
-    
-   
-
+ 
 }
 span{
     font-size: 15px;
@@ -34,6 +26,6 @@ span{
     height: 700px;
     border:3px solid gray;
     margin-left: 15%;
-    background-color:rgb(252, 222, 236) ;
+    background-color:rgb(227, 252, 229) ;
     
 }
