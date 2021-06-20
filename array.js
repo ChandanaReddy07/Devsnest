@@ -1,3 +1,4 @@
+//1
 function is_array(name){
    if(toString.call(name)==="[object Array]"){
        return true
@@ -5,9 +6,7 @@ function is_array(name){
    else{
        return false
    }
-
 }
-
 console.log(is_array('w3resource'));
 console.log(is_array([1, 2, 4, 0]));
 console.log(typeof('w3resource'))
@@ -32,6 +31,7 @@ console.log(first([7, 9, 0, -2],3));
 console.log(first([7, 9, 0, -2],6));
 console.log(first([7, 9, 0, -2],-3));
 
+//4
 function array_mesh(name){
     x=""
     name.forEach(element => {
@@ -42,6 +42,7 @@ function array_mesh(name){
   }
 console.log(array_mesh(["Red", "Green", "White", "Black"]))
 
+//5
 function most_freq(arr1){
     let mf = 1;
     let m = 0;
