@@ -1,0 +1,33 @@
+.container {
+  margin-left: 32%;
+  margin-top:2%;
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr 0fr 0fr;
+  grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr;
+}
+
+  .cell {
+    background-color:rgb(247, 169, 51);
+    width:70px;
+    padding: 0px 0px;
+    
+    height:70px; 
+    border:2px solid black ;
+  }
+  .cell:hover{
+      background-color:rgb(236, 147, 45);
+  }
+  .cellClicked{
+      background-color: rgb(97, 230, 240);
+  }
+  .text {
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size:larger;
+  }
+  #myOutput{
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size:larger;
+
+  }
