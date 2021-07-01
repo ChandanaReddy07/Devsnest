@@ -1,7 +1,7 @@
 const cards=document.querySelectorAll(".card");
 console.log(cards);
 
-
+var count=0;
 var isFlipped = false;
 var one;
 var two;
@@ -22,40 +22,35 @@ function flip(){
     checkIt();
   }
 }
-
-
 function reset(){
-
    isFlipped = false;
    firstCard="null";
    secondCard="null";
-
 }
 
 var success=()=>{
-
   firstCard.removeEventListener('click',flip);
   secondCard.removeEventListener('click',flip);
   reset();
 }
 
 var fail=()=>{
-
  setTimeout(()=>{
   firstCard.classList.remove("flip");
   secondCard.classList.remove("flip");
   reset();
  },1000);
-  
 }
 function checkIt(){
-  if(firstCard.id===secondCard.id){
-    success();
+  if(firstCard.id!==secondCard.id){
+    fail();
   }
   else 
-  fail();
-  
+  {success();
+  count++;
 }
+}
+
 
 (function shuffle(){
   cards.forEach((card)=>{
