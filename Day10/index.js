@@ -1,53 +1,83 @@
 const cards=document.querySelectorAll(".card");
 console.log(cards);
 
+// var count=0;
+// var isFlipped = false;
+// var one;
+// var two;
+
 var count=0;
 var isFlipped = false;
 var one;
 var two;
 
+// started()
+
+// function started(){
+//   cards.forEach((man)=>{
+//     if(man.classList.contains("flip"))
+   
+//     { man.classList.remove("flip")
+//      count=0
+//   }
+  
+// })}
 cards.forEach((man)=>man.addEventListener("click",flip));
+
+
 
 function flip(){
 
   this.classList.add("flip");
   if(!isFlipped){
     isFlipped=true;
-    firstCard=this;
+    one=this;
   }
   else{
-    secondCard = this;
-    console.log(firstCard)
-    console.log(secondCard)
+    two = this;
+    // console.log(one)
+    // console.log(two)
     checkIt();
   }
 }
 function reset(){
    isFlipped = false;
-   firstCard="null";
-   secondCard="null";
+   one="null";
+   two="null";
 }
 
 var success=()=>{
-  firstCard.removeEventListener('click',flip);
-  secondCard.removeEventListener('click',flip);
+  one.removeEventListener('click',flip);
+  two.removeEventListener('click',flip);
+  if(count===7){
+   cards.forEach((man)=>{
+     if(!man.classList.contains(flip))
+     setTimeout(()=>{
+      man.classList.add("flip")
+      count=0
+    //  started()  
+     },1000);
+    
+
+   })
+  }
   reset();
 }
 
 var fail=()=>{
  setTimeout(()=>{
-  firstCard.classList.remove("flip");
-  secondCard.classList.remove("flip");
+  one.classList.remove("flip");
+  two.classList.remove("flip");
   reset();
  },1000);
 }
 function checkIt(){
-  if(firstCard.id!==secondCard.id){
+  if(one.dataset.image!==two.dataset.image){
     fail();
   }
   else 
-  {success();
-  count++;
+  { count++;
+    success();
 }
 }
 
