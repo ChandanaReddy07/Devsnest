@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: Verdana, sans-serif; margin:1}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -8,12 +8,25 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-image: url("http://i.stack.imgur.com/spmUM.gif");
+
+  width: 600px;
+  height:500px;
 }
 
-.pitty{
-    width:200px;
-    height: 300px;
-    border-top: 2px solid chocolate;
+.mySlides{
+  border-radius: 0em;
+  font-family: 'Yomogi', cursive;
+  padding-left:10%;
+  padding-top:5%;
+  color: beige;
+}
+.dialogue{
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 20px;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Next & previous buttons */

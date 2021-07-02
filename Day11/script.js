@@ -1,4 +1,5 @@
-const x= document.querySelector(".content")
+const x= document.querySelector(".slideshow-container")
+console.log(x)
 
 var list=[
     {
@@ -15,29 +16,46 @@ var list=[
     }
 ]
 
-function quest( i){
+function quest(i){
     var parenty=document.createElement("div")
-    parenty.className="pitty"
+    parenty.className="mySlides"
+
+    x.appendChild(parenty)
     
     var question= document.createElement("span")
     parenty.appendChild(question)
     question.className="quest"
     question.innerText=list[i].quest;
-    x.appendChild(question)
     var options=document.createElement("ol")
     options.className="opts"
     question.appendChild(options)
    
     for(var j=0;j<4;j++)
    { var option=document.createElement("li")
+   var buttons=document.createElement("button")
+   buttons.className="optionSelected"
+   buttons.id=j
+   buttons.textContent=`Option ${j+1}`
    option.innerText=list[i].options[j]
    options.appendChild(option)
-}
+   options.appendChild(buttons)
+
+   
 
 
 }
+   
+}
 
-quest(1)
+
+
+for(var i=0;i<list.length;i++){
+    quest(i)
+}
+
+
+//creating buttons
+
 
 
 
