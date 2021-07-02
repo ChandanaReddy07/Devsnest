@@ -1,4 +1,4 @@
-const x= document.querySelector(".slideshow-container")
+const x= document.querySelector(".slideshow-container .context")
 console.log(x)
 var count=0
 const list=[

@@ -15,7 +15,16 @@ img {vertical-align: middle;}
   background-size: cover;
   background-origin: content-box;
   width: 600px;
+  border-radius: 10px;
   height:500px;
+}
+
+.context{
+  position:relative;
+  
+  padding-left: 10%;
+  padding-top:10%;
+  color: beige;
 }
 
 .mySlides{
