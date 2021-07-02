@@ -1,27 +1,14 @@
 const cards=document.querySelectorAll(".card");
 console.log(cards);
 
-// var count=0;
-// var isFlipped = false;
-// var one;
-// var two;
+
 
 var count=0;
 var isFlipped = false;
 var one;
 var two;
 
-// started()
 
-// function started(){
-//   cards.forEach((man)=>{
-//     if(man.classList.contains("flip"))
-   
-//     { man.classList.remove("flip")
-//      count=0
-//   }
-  
-// })}
 cards.forEach((man)=>man.addEventListener("click",flip));
 
 
@@ -35,8 +22,7 @@ function flip(){
   }
   else{
     two = this;
-    // console.log(one)
-    // console.log(two)
+    
     checkIt();
   }
 }
