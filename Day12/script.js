@@ -10,8 +10,6 @@ var arr=[{
     done:false
 }]
 
-
-
 var list = document.querySelector('#wrapper .contains #todo-list ul');
  console.log(list);
 function loadTodo(){
@@ -56,8 +54,17 @@ var todos = document.querySelectorAll('#todo-list li .name');
 list.addEventListener('click', (e) => {
     if (e.target.className == 'delete') {
         const li = e.target.parentElement;
+        console.log("li"+li)
+        
       list.removeChild(li);
-    }}
+    }
+    if (e.target.className == 'statebtn') {
+        const li = e.target.parentElement;
+       li.classList.add('green')
+    }
+
+    
+}
 )
 
 // forms
@@ -70,13 +77,13 @@ addForm.addEventListener('submit', (e) => {
 
     const li = document.createElement('li');
     const todotitle = document.createElement('span')
-    const stateBtn=document.createElement('span')
+    const stateBtn=document.createElement('statebtn')
     const deleteBtn=document.createElement('span')
     
 
 
     todotitle.textContent = name;
-    stateBtn.textContent="Mark Done"
+     stateBtn.textContent="Mark Done"
     deleteBtn.textContent = 'delete';
 
     // add css classes
@@ -85,7 +92,7 @@ addForm.addEventListener('submit', (e) => {
     stateBtn.classList.add('statebtn');
 
 
-    console.log("arrr"+arr)
+    
     deleteBtn.classList.add('delete');
 
     li.appendChild(todotitle);
@@ -98,12 +105,12 @@ addForm.addEventListener('submit', (e) => {
     console.log(name);
 })
 
-localStorage.add("todos",arr)
+var p=localStorage.setItem(`todos${1}`,arr[1].title)
+console.log("storge"+localStorage.getItem("todos1"))
 
 todos.forEach((todo) => {
     arr.push(todo.textContent)
     console.log(todo);
 })
-arr.forEach((book) => {
-    console.log("booksb"+book);
-})
+
+//localStorage.add("todo")
