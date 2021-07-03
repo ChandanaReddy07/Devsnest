@@ -1,6 +1,7 @@
 const x= document.querySelector(".slideshow-container .context")
-console.log(x)
+//console.log(x)
 var count=0
+var resul
 const list=[
     {
         quest:"Who invented the Light Bulb?",
@@ -39,41 +40,52 @@ function quest(i){
    var buttons=document.createElement("span")
    buttons.className="optionek"
    buttons.id=j
-   buttons.addEventListener("click",(e)=>{ console.log("yeh"+list[e.target.id])
-       if(list[i].options[e.target.id]===list[i].correct)
-       console.log("yess correct"+ ++count)
+   buttons.addEventListener("click",(e)=>{
+    if(list[i].options[e.target.id]===list[i].correct)
+    console.log("yess cor  rect"+ ++count)
+    
+       if(i===2)
+       { result(count)}
+       
+       
    })
+//    console.log("yess1 correct"+ count)
    buttons.textContent=`Option ${j+1}`
    option.innerText=list[i].options[j]
    options.appendChild(option)
    options.appendChild(buttons)
-
-   
-
-
 }
-   
+// console.log("yess2 correct"+ count)
+
+
 }
 
 
 
 for(var i=0;i<list.length;i++){
     quest(i)
-    //  var v=document.querySelectorAll(".optionSelected")
-    // console.log("v"+v)
-    // console.log("quesss"+ list[i])
-    
-    // v.forEach(but=>but.addEventListener("click",(e) => {
+    console.log("yess2 correct"+ count)
+  
+}
+console.log("scr"+count)
+function result(count){
 
-    //     console.log("quesss"+ list[i])
-        
-    //     if(list[i].quest[e.target.id]===list[i].correct)
 
-    //     console.log("clasnam yess correct"+e.target.id)
-    // }))
+    var parenty=document.createElement("div")
+    parenty.className="mySlides"
+
+    x.appendChild(parenty)
+
+    var res=document.createElement("div")
+
+    res.className="result"
+    res.innerText=`Your score out of 30 is ${count*10}`
+
+    parenty.appendChild(res)
+
 }
 
-   
+//result()
  
 // function checkIt (e) {
 
