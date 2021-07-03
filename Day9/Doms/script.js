@@ -43,18 +43,6 @@ const print = () => {
 })
 }
 
-
-// event listeners
-// delteing a book
-// var buttons = document.querySelectorAll('#book-list .delete');
-// buttons.forEach((button) => {
-//     button.addEventListener('click', (e) => {
-//         // get the parent elemnt which to delete
-//         const li = e.target.parentElement;
-//         li.parentElement.removeChild(li);
-//     })
-// })
-
 var list = document.querySelector('#book-list ul');
 console.log(list);
 list.addEventListener('click', (e) => {
