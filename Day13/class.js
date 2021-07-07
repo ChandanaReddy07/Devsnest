@@ -1,31 +1,31 @@
-// var promise=new Promise((resolve,reject)=>{
-//     let a=1+1
-//     if(a===3){
-//         resolve({
-//             "success":true
-//         })
-//     }
-//     else{
-//         reject({
-//             "failed":false
-//         }
+var promise=new Promise((resolve,reject)=>{
+    let a=1+1
+    if(a===3){
+        resolve({
+            "success":true
+        })
+    }
+    else{
+        reject({
+            "failed":false
+        }
            
-//         )
-//     }
-//     console.loglog("A")
-// })
-// promise.then(()=>{
-//     console.log("promise resolved")
-// })
-// .catch(()=>{
-//     console.log("promise was rejected")
-// })
-// //promise run the fuction without calling
-// console.log("hello")
+        )
+    }
+    console.loglog("A")
+})
+promise.then(()=>{
+    console.log("promise resolved")
+})
+.catch(()=>{
+    console.log("promise was rejected")
+})
+//promise run the fuction without calling
+console.log("hello")
 
-// fetch('https://api.github.com/users/ChandanaReddy07')
-// .then(res=> res.json())
-// .then(data=> console.log(data))
+fetch('https://api.github.com/users/ChandanaReddy07')
+.then(res=> res.json())
+.then(data=> console.log(data))
 const btn=document.querySelector('button')
 const input=document.querySelector('input')
 
