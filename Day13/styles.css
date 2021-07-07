@@ -1,0 +1,30 @@
+.po{
+    width: 50px;
+   
+    height: 30px;
+    background-color: chartreuse;
+    content: "hello";
+}
+.po:hover{
+    background-color: crimson ;
+}
+.content{
+    width:600px;
+    height: 200px;
+    border:3px solid gray;
+    margin-left: 25%;
+    /* background-color:rgb(227, 252, 229) ; */
+    text-align: center;
+    background-color: #ce36fc;
+    /* padding-left: 33%; */
+}
+body {
+    font-family: Tahoma;
+    color: rgb(27, 2, 2);
+    letter-spacing: 1px;
+  }
+.qoutes{
+    background-color: #fc7dad;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
