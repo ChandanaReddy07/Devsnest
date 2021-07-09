@@ -1,14 +1,20 @@
 import './App.css';
-import Card from './component/Card';
+//import Card from './component/Card';
+import Chess from './component/Chess';
 
 
 function App() {
-    return(
-        <div className="App">
-         <Card/>
+    // return(
+    //     <div className="App">
+    //      <Card/>
           
-        </div>
-      )
+    //     </div>
+    //   )
+    return(
+      <div className="App">
+      <Chess/>
+      </div>
+    )
 }
 
 export default App;
