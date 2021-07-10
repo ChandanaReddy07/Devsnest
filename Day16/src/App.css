@@ -15,7 +15,7 @@
   width:200.5px;
   height:200.5px;
   padding : 10px 20px; 
-  display: block;
+ 
   display:inline-block;  
    margin:auto;
 
@@ -47,4 +47,28 @@
 }
 .card2:nth-child(even) {
   background:black;
+}
+
+.cardsc{
+  border: 1px solid grey;
+  width:100%;
+  height:80px;
+  
+  margin:auto;
+  
+}
+
+div.container {
+  margin:4px 4px;
+  padding:4px;
+  background-color: green;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display:block;  
+  width:300px;
+  height:300px;
+  padding : 10px 20px; 
+  display:inline-block;  
+   margin:auto;
+  text-align:justify;
 }

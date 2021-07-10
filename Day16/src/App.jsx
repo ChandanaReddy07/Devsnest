@@ -1,6 +1,8 @@
 import './App.css';
 import Card from './component/Card';
+import CardScroll from './component/CardScroll';
 //import Chess from './component/Chess';
+
 function range(start, end) {
   return Array(end - start + 1).fill().map((_, idx) => start + idx)
 }
@@ -69,6 +71,15 @@ function App() {
       <div className="App">
       <Card/>
       <Chess/>
+      <div className="container">
+      <CardScroll title="wallpapper 1"/>
+      <CardScroll title="wallpapper 2"/>
+      <CardScroll title="wallpapper 3"/>
+      <CardScroll title="wallpapper 4"/>
+      <CardScroll title="wallpapper 5"/>
+      <CardScroll title="wallpapper 6"/>
+      
+      </div>
       </div>
     )
 }
