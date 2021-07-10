@@ -21,6 +21,7 @@ const Card=()=>{
           </p>
       </div>
     )
+   
 }
 
 export default Card

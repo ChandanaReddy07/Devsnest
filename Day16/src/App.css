@@ -8,30 +8,43 @@
   min-height: 100vh;
   width:100vw;
   display:flex;
-  border: 10px solid black;
+ 
 }
-
 .card{
   border: 1px solid grey;
-  width:200px;
-  padding : 10px 20px;
-  display:inline-block;
-  margin:auto;
+  width:200.5px;
+  height:200.5px;
+  padding : 10px 20px; 
+  display: block;
+  display:inline-block;  
+   margin:auto;
+
+}
+
+.card1,.card2{
+  border: 1px solid grey;
+  width:22.5px;
+  height:22.5px;
+ 
+ 
 }
 .card img{
     width:100%
 }
-.card1{
-  background-color: black;
 
-}
-.card2{
-  background-color: blanchedalmond;
-}
-.card1, .card2{
+.chess{
+  border: 10px solid black;
+  width: 200px;
+  height:200px;
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+  grid-template-rows:  0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
  
-  width:50px;
-  padding : 10px 20px;
-  display:inline-block;
   margin:auto;
+}
+.card1:nth-child(odd) {
+  background:black;
+}
+.card2:nth-child(even) {
+  background:black;
 }
