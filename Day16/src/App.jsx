@@ -72,12 +72,12 @@ function App() {
       <Card/>
       <Chess/>
       <div className="container">
-      <CardScroll title="wallpapper 1"/>
-      <CardScroll title="wallpapper 2"/>
-      <CardScroll title="wallpapper 3"/>
-      <CardScroll title="wallpapper 4"/>
-      <CardScroll title="wallpapper 5"/>
-      <CardScroll title="wallpapper 6"/>
+      <CardScroll title="Pizza" des="i love pizza 3/5" />
+      <CardScroll title="golgappa" des="in love with golgappa 4/5"/>
+      <CardScroll title="paneer ticka" des="in love with golgappa 3/5"/>
+      <CardScroll title="burgur" des="i love golgappa 2/5"/>
+      <CardScroll title="chicken" des="in love with golgappa 4/5"/>
+     
       
       </div>
       </div>
