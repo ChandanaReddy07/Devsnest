@@ -26,6 +26,7 @@ console.log("hello")
 fetch('https://api.github.com/users/ChandanaReddy07')
 .then(res=> res.json())
 .then(data=> console.log(data))
+
 const btn=document.querySelector('button')
 const input=document.querySelector('input')
 
