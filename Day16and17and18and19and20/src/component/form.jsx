@@ -7,7 +7,7 @@ const Todo=({todo,todos,setTodos,index})=>{
             <button onClick={
                 ()=>{
                     console.log("Delete =" , todo)
-                    const newTodos= todos.filter((el,i )=>i!=index)
+                    const newTodos= todos.filter((el,i )=>i!==index)
                     setTodos(newTodos)
                 }
             }>delete</button>

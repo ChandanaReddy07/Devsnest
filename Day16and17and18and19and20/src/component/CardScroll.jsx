@@ -1,13 +1,40 @@
+import React, {useState} from 'react';
 
-const CardScroll=(props)=>{
+
+function CardScroll({item}){
+    const [items,setItems]=useState(item)
+
+    console.log("items"+items)
+    
     return(
+
+      
+       <div>
+        
+            { 
+           items.map((item,index)=>{
+            return(
+                <div className="cardsc">
+                <img src="" alt="" />
+                <div className="title">{item.title||"Card Title"}</div>
+                <h2 className="des">{item.cal}</h2>
+                <button onClick={()=>{
+                    const newItem=items.filter((e,i) => i !== index);
+							setItems(newItem);
+   
+                }}>delete</button>
+               
+            </div>
+
+
+
+            )
+        })
+    }
+       </div>
+      
      
-         <div className="cardsc">
-             <img src="" alt="" />
-             <div className="title">{props.title||"Card Title"}</div>
-             <h2 className="des">{props.des}</h2>
-            
-         </div>
+       
       
     )
 }
