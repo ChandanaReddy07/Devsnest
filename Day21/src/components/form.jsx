@@ -1,24 +1,31 @@
-const Form1 = ({ handleChange, handleChange1 }) => {
-  return (
-   
-      <form>
+const Form1 = ({ handleChange, handleChange1,value }) => {
+  return (  
+    <div className="form1">
+      <form 
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleChange1();
+      }}
+    >
         <input
           type="text"
           placeholder="enter name"
           onChange={handleChange("title")}
+          value={value.title}
           required
         />
-        <br />
+       &nbsp;
         <input
           type="number"
           placeholder="enter calories"
           onChange={handleChange("cal")}
+          value={value.cal}
           required
         />
-        <input type="submit" placeholder="Add" onClick={handleChange1} />
-
-       
+        <br/>
+        <button type="submit">Add</button>
       </form>
+      </div>
  
   );
 };

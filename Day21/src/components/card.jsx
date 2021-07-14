@@ -12,7 +12,7 @@ const Card = ({
 }) => {
   const [isedit, setIsedit] = useState(false);
   return (
-    <div>
+    <div className="card1">
       {!isedit ? (
         <div className="card">
           <h1>{value.title}</h1>
@@ -45,26 +45,28 @@ const Card = ({
           >
             <input
               type="text"
-              placeholder={value.text}
-              onChange={() => {
-                handleChange("title");
+              placeholder={value.title}
+              onChange={(e)=>{
+                value.title=e.target.value
               }}
             />
             <input
               type="number"
               placeholder={value.cal}
-              onChange={() => {
-                handleChange("cal");
+              onChange={(e)=>{
+                value.cal=e.target.value
               }}
             />
           </form>
           <button
-            className="edit"
+            className="Done"
             onClick={() => {
-              setIsedit(true);
+              setIsedit(false);
+              
+          
             }}
           >
-            edit
+            Done
           </button>
           <button
             className="del"
