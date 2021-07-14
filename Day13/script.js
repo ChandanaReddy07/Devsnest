@@ -14,8 +14,7 @@ z.className="qoutes"
     //   console.log(`${data.content} —${data.author}`)
     let data=await d.json()
       z.innerHTML=data.content
-    
-     
+   
     ul.appendChild(z)
 }
   

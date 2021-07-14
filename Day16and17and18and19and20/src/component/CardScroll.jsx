@@ -7,10 +7,7 @@ function CardScroll({item}){
     console.log("items"+items)
     
     return(
-
-      
        <div>
-        
             { 
            items.map((item,index)=>{
             return(
