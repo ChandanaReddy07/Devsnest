@@ -10,6 +10,7 @@ const Card = ({
   handleChange,
   handleChange1,
 }) => {
+  
   const [isedit, setIsedit] = useState(false);
   return (
     <div className="card1">
