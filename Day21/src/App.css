@@ -7,22 +7,37 @@
 .form1{
     margin-top: 25px;
 }
+.container{
+    border: 1px solid black;
+    height:600px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(185, 235, 255);
+
+}
 .App{
     width:  100%;
-    height: 700px;
+   
     text-align: center;
+  
 }
 input{
     height: 30px;
     width: 200px;
 }
 .card1{
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .cards{
     text-align: center;
+    width:500px;
     margin:auto;
-    padding-top:20px ;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display:block;  
+    margin-top: 40px;
+    height: 400px;
 }
 button{
     width: 80px;
@@ -33,7 +48,6 @@ button{
 .App .card{
     width:400px;
     margin:auto;
-   
     height:150px;
     border:3px solid black;
     border-radius: 8px;

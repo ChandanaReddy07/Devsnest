@@ -8,6 +8,8 @@ function App() {
     title:"",
     cal:""
   })
+  
+
   const [values,setValues]=useState([])
 
   const handleChange=(name)=>(e)=>{
@@ -27,6 +29,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="container">
       <Form1 handleChange1={handleChange1} handleChange={handleChange} value={value} />
 
       <div className="cards">
@@ -40,6 +43,7 @@ function App() {
           )
         })
       }
+      </div>
       </div>
      
     </div>

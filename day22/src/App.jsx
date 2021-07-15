@@ -1,13 +1,13 @@
 
 import './App.css';
-
 import React ,{useState,useEffect} from 'react';
 import Templates from './components/template';
+
 function App() {
 
   const [templates,setTemplates]=useState([]);
   const [meme,setMeme]=useState(null);
-
+  
 useEffect(()=>{
   fetch('https://api.imgflip.com/get_memes')
   .then(res=>res.json())
@@ -16,10 +16,6 @@ useEffect(()=>{
   }
   )
 },[])
-
-
-
-
   return (
     <div className="App">
       <h2>meme generator</h2>
@@ -27,5 +23,4 @@ useEffect(()=>{
     </div>
   );
 }
-
 export default App;
