@@ -44,6 +44,7 @@ const Card = ({
               e.preventDefault();
             }}
           >
+            <br/>
             <input
               type="text"
               placeholder={value.title}
@@ -51,6 +52,7 @@ const Card = ({
                 value.title=e.target.value
               }}
             />
+            <br/>
             <input
               type="number"
               placeholder={value.cal}
