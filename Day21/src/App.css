@@ -13,12 +13,16 @@
     width: 600px;
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(185, 235, 255);
-
+    background-color: rgb(9, 10, 10); 
+    box-shadow: 10px 10px 10px rgb(56, 54, 54);
+    
 }
 .App{
     width:  100%;
-   
+    font-family: 'Indie Flower', cursive;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    
     text-align: center;
   
 }
@@ -28,6 +32,8 @@ input{
 }
 .card1{
     padding-bottom: 10px;
+    padding-top: 5px;
+    
 }
 .cards{
     text-align: center;
@@ -36,8 +42,11 @@ input{
     overflow-x: hidden;
     overflow-y: auto;
     display:block;  
+    background-color: rgb(245, 247, 250);
     margin-top: 40px;
+    
     height: 400px;
+    /* border:1px solid black; */
 }
 button{
     width: 80px;
@@ -49,7 +58,29 @@ button{
     width:400px;
     margin:auto;
     height:150px;
-    border:3px solid black;
+    border:2px solid black;
     border-radius: 8px;
-    background-color:blueviolet ;
+    color: cornsilk;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 5px 5px 8px rgb(56, 54, 54);
+    background-color:rgb(107, 2, 2) ;
+}
+.empty{
+    width:500px;
+    height: 300px;
+    margin:auto;
+    background-color:white;
+}
+.image1{
+    width:500px;
+    height: 250px;
+}
+.image1 img{
+    width: 100%;
+    /* height:80%; */ 
+  
+   
+  
+    background-size: auto;
+    
 }

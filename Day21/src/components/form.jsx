@@ -9,7 +9,7 @@ const Form1 = ({ handleChange, handleChange1,value }) => {
     >
         <input
           type="text"
-          placeholder="enter name"
+          placeholder="enter Item"
           onChange={handleChange("title")}
           value={value.title}
           required
