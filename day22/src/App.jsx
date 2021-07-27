@@ -15,11 +15,7 @@ function App() {
         setTemplates(data.data.memes);
       });
   }, []);
-  const goBack= () =>(
-    <div className="mt-5">
-        <Link className="btn btn-sm btn-success mb-3" to="/admin/dashboard">Admin Home</Link>
-    </div>
-);
+ 
   return (
     <div className="App">
       <h2>meme generator</h2>

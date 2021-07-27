@@ -1,7 +1,13 @@
 body{
-    text-align: center;
+    /* text-align: center; */
+    background-color: cadetblue;
+    
 }
-
+.para{
+    width: 600px;
+    color:cornsilk;
+    font-size: 50px;
+}
 .clock{
     width: 400px;
     height: 400px;

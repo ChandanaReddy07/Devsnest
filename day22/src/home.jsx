@@ -15,31 +15,14 @@ const Home = () => {
         )
       }, []);
      
-//    {
-//     memes.map(element=>
-//         {
-//         <div className="image1"  style={{backgroundImage:`url(${element.url})`}}>
-          
-//         </div>
 
-//         }
-    
-//     )
-//    } 
     
 const goBack= () =>(
   <div>
       <Link className ="but" to="/create">Admin Home</Link>
   </div>
 );
-        //   let z=document.createElement("div")
-        //   z.className="image1"
-        //   z.innerHTML=`<img src=${element.url}
-        //    alt=" "/>  <a class="but1" href=${element.url} download>Preview</a>` 
-        //   imgs.appendChild(z)
-            
-        // }) )
-        // .catch(err=>console.log(err))
+        
 
   return (
     <div className="contain">
@@ -53,7 +36,9 @@ const goBack= () =>(
       }
       >
         Generate
+
       </button>
+
       {/* <button className="but"
        onClick={
         goBack()
@@ -61,6 +46,7 @@ const goBack= () =>(
       >
         Create
       </button> */}
+      
       {goBack()}
      
 
