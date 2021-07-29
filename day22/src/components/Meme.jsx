@@ -14,7 +14,7 @@ const Meme=({meme,setMeme })=>{
     const generateMeme=()=>{
         let url=`https://api.imgflip.com/caption_image?template_id=${form.template_id}&username=${form.username}&password=${form.password}`;
         form.boxes.map((box,index)=>{
-        console.log(`boxes[${index}][text]=${box.text}`)
+        console.log(`https://api.imgflip.com/caption_image?template_id=${form.template_id}&username=${form.username}&password=${form.password}&boxes[${index}][text]=${box.text}`)
         url+=   `&boxes[${index}][text]=${box.text}`
         })
         fetch(url).then(res=>res.json())
