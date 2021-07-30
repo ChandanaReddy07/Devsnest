@@ -10,5 +10,11 @@ const removeItem=(id)=>{
         payload: id,
     }
 }
+const doneItem=(id)=>{
+    return {
+        type:"DONE_ITEM",
+        payload:id,
+    }
+}
 
-export {addItem,removeItem}
+export {addItem,removeItem,doneItem}

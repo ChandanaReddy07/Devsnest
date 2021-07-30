@@ -6,7 +6,6 @@ import { addItem, removeItem } from "../action";
 const  AddTodo=()=> {
     const [item,setItem]=useState("");
     const dispatch = useDispatch()
-    
     return (
         <div>
             <input type="text" 
@@ -19,6 +18,7 @@ const  AddTodo=()=> {
                 dispatch(addItem({
                     title:item,
                     done:false,
+                    edit:setItem
                 }))
                 setItem("")
             }}>Add</button>      

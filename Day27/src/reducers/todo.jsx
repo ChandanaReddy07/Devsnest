@@ -4,10 +4,11 @@ const todoReducer=(state=[],action)=>{
       
         return [...state,action.payload]
     }
-    else if(action.type==="REMOVE_ITEM"){
-       
+    else if(action.type==="REMOVE_ITEM"){ 
         return state.filter((item,index)=>index!==action.payload);
-    
+    }
+    else if(action.type==="DONE_ITEM"){ 
+        return state.filter((item,index)=>index!==action.payload);
     }
     else{
         return state
