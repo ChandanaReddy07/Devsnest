@@ -4,23 +4,25 @@ import { useDispatch } from 'react-redux';
 
 import { addItem, removeItem } from "../action";
 const  AddTodo=()=> {
-    const [item,setItem]=useState("");
+    const [item,setItem]=useState({
+        name:"",
+        done:false
+    });
     const dispatch = useDispatch()
     return (
         <div>
             <input type="text" 
             placeholder="Add a todo..."
-            value={item}
+            value={item.name}
             onChange={(e)=>{
-                setItem(e.target.value)
+                setItem({...item,name:e.target.value})
             }} />
             <button onClick={()=>{
                 dispatch(addItem({
                     title:item,
-                    done:false,
-                    edit:setItem
+                    // done:false,    
                 }))
-                setItem("")
+                setItem({...item,name:""})
             }}>Add</button>      
         </div>
     )

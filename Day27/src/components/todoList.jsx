@@ -8,18 +8,21 @@ const ListTodo = () => {
     <div>
       {todos.map((todo, index) => (
         <div>
-          <button
+         {/* <input type="checkbox"/> */}
+         <button
             onClick={() => {
-              dispatch(
-                doneItem({ 
-                  done: true,
-                })
-              );
+              dispatch(doneItem(index));
             }}
           >
-            done
+            xx
           </button>
-          <h5 style={{ display: "inline-block" }}>{todo.title}</h5>
+         {
+           !todo.title.done?
+
+          <h5 style={{ display: "inline-block" }}>{todo.title.name}</h5>:"heyy"
+
+
+         }
           <button
             onClick={() => {
               dispatch(removeItem(index));

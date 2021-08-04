@@ -13,8 +13,9 @@ const removeItem=(id)=>{
 const doneItem=(id)=>{
     return {
         type:"DONE_ITEM",
-        payload:id,
+        payload: id,
     }
 }
+
 
 export {addItem,removeItem,doneItem}
