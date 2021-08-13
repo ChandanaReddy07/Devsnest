@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import todoReducer from "./todo";
+import {todosReducer} from "./todo"
 
 
 const rootReducer= combineReducers({
-    notes:todoReducer
+    notes:todosReducer
 })
 export type reducerType=ReturnType<typeof rootReducer>
 
