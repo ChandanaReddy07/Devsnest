@@ -29,7 +29,6 @@ const App=()=>{
             <h3>{note}</h3>
             <button onClick={()=>{
                 dispatch(removeNote(index))
-
             }}>Delete</button>
           </li>
         ))}
